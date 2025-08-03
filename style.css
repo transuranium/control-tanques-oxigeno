@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #121212;
+  color: #f0f0f0;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+h2 {
+  text-align: center;
+  margin: 25px 0 10px;
+  font-size: 1.5em;
+}
+
+/* Общий стиль таблиц */
+table {
+  margin: 0 auto 25px;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 800px;
+  font-size: 1.2em;
+}
+th,
+td {
+  border: 1px solid #444;
+  padding: 12px;
+  text-align: center;
+}
+th {
+  background: #1e1e1e;
+  color: #fff;
+  font-size: 1.2em;
+}
+.lleno {
+  background: #1b5e20;
+  color: #fff;
+}
+.uso {
+  background: #fbc02d;
+  color: #000;
+}
+.vacio {
+  background: #b71c1c;
+  color: #fff;
+}
+.externo {
+  background: #616161;
+  color: #fff;
+}
+
+/* Респонсив для всех таблиц */
+@media (max-width: 600px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    width: 100%;
+  }
+  tr {
+    margin-bottom: 15px;
+  }
+  th {
+    text-align: left;
+    font-size: 1em;
+    padding: 8px;
+  }
+  td {
+    text-align: left;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #444;
+    font-size: 1.1em;
+  }
+  tr td:first-child {
+    font-weight: bold;
+    background: #1e1e1e;
+    color: #fff;
+  }
+}
+
+/* Галерея */
+.comentario {
+  font-style: italic;
+  margin: 15px auto;
+  color: #ccc;
+  text-align: center;
+  max-width: 800px;
+  font-size: 1.1em;
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+.galeria img:hover {
+  transform: scale(1.05);
+}
