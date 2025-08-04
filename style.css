@@ -115,3 +115,31 @@ th {
 .galeria img:hover {
   transform: scale(1.05);
 }
+
+/* Estilos para botones según su tipo */
+.primary {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.primary:hover {
+  background-color: #0062cc;
+}
+
+.secondary {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.secondary:hover {
+  background-color: #555555;
+}
+
+.danger {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.danger:hover {
+  background-color: #c82333;
+}
